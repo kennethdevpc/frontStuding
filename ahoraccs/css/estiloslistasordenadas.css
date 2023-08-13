@@ -14,3 +14,10 @@ ol li::after {
   /*se agrega el claor despues del li*/
   content: '.';
 }
+
+h1::before {
+  content: 'hola antes';
+}
+h1:hover {
+  color: red;
+}
