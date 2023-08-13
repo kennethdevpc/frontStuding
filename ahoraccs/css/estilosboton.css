@@ -1,0 +1,21 @@
+h1 {
+  color: #560bad;
+}
+a:link,
+a:visited {
+  background-color: #b5179e;
+  color: aliceblue;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; /*para que no se queden uno sobre el otro y que cada uno tenga su propio espaco*/
+}
+
+a:hover,
+a:active {
+  background-color: #176eb5;
+  color: aliceblue;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+}

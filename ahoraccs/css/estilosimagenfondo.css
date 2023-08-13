@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.back {
+  background-image: url('/ahoraccs/public/prueba.png');
+  background-repeat: no-repeat; /* No repetir la imagen en caso de que no cubra completamente */
+  background-position: center center; /* Posición centrada de la imagen */
+  height: 50vh; /* Altura igual al 100% del viewport (ventana) */
+  background-attachment: fixed;
+  background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+  /* background-size: contain; Ajustar la imagen para cubrir lo maximo posible del contenedor sin amebargo quedaran partes blancas si las PROPORCIONES  de la imagen no son proporcionales  alas del Contenedro osea si el contenedor mide 20x10 la imagen debe ser algo como de 10x5 o 2x1 o 8x4 asi sucesivamente */
+}

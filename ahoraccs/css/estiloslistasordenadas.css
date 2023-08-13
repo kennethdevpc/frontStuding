@@ -1,0 +1,16 @@
+ol {
+  list-style: none;
+  counter-reset: contador; /* 2)se reinicia: el contador para cad aul que se cree*/
+}
+ol li {
+  counter-increment: contador; /*3) se incrementa: se le indica que para cada uno de estos listItem se utilizara ese contador*/
+}
+ol li::before {
+  color: orange;
+  content: 'curso ' counter(contador) ')'; /*1) primero se crea:el contador*/
+}
+
+ol li::after {
+  /*se agrega el claor despues del li*/
+  content: '.';
+}

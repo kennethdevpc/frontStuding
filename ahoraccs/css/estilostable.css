@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  /*border-spacing: 5px; /*al revez de collapse crea espacios ||*/
+}
+
+caption {
+  color: red;
+  font-family: serif;
+}
+
+tr:nth-child(even) {
+  /*para filas pares*/
+  background-color: blue;
+}
+tr:nth-child(odd) {
+  /*para filas impares*/
+  background-color: red;
+}
+th {
+  color: aliceblue;
+  background-color: rgb(6, 86, 95);
+}

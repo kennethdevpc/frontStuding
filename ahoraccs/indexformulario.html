@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <!-- <form action="" novalidate> //es para enviar sin validar -->
+    <form action="mi_servidor" method="POST" target="_blank" autocomplete="off">
+      <fieldset>
+        <label for="idPersona">ID pesona:</label>
+        <input type="text" id="idPersona" name="idPersona" value="100" readonly="true" />
+        <input type="hidden" id="sistema" name="sistema" value="SAP" />
+        <br />
+        <legend>Datos de fromulario:</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="nombrecito" required="true" />
+        <br />
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" placeholder="passwordcita" required="true" />
+        <br />
+        <label for="edad">edad:</label>
+        <input type="number" id="edad" name="edad" placeholder="edad" required="true" step="any" />
+        <br />
+        <input type="radio" id="femenino" name="genero" value="femenino" />
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino" />
+        <label for="masculino">Masculino</label>
+        <br />
+        <label>Genero de musica</label>
+        <br />
+        <input type="checkbox" id="clasica" name="musica" value="clasica" />
+        <label for="clasica">Clásica</label> <br />
+        <input type="checkbox" id="jazz" name="musica" value="jazz" />
+        <label for="jazz">jazz</label> <br />
+        <label for="autos">Marca de autos favoritas:</label> <br />
+        <select name="autos" id="autos" multiple="true">
+          <option value="volvo" selectec="true">volvo</option>
+          <option value="masda">masda</option>
+          <option value="bmw">bmw</option>
+        </select>
+        <br />
+        <label for="comentario">Comentarios</label><br />
+        <textarea name="comentario" id="comentario" cols="30" rows="10">
+Estee es el comentario Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque accusantium alias quis nisi quisquam!
+      </textarea
+        >
+
+        <input type="submit" value="enviar" />
+        <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validas" />
+        <input type="reset" value="Restablecer" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+h1 {
+  color: blue;
+}
+
+a:link {
+  /* cuando no se ha dado clic*/
+  color: orange;
+}
+a:visited {
+  /* cuando se ha dado clic*/
+  color: blue;
+  text-decoration: none; /* sin el subrayado*/
+}
+
+/* cuando nos ponemos sobre el link*/
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+/* cuando no se ha dado clic sostendo*/
+a:active {
+  color: brown;
+}

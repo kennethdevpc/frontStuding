@@ -1,0 +1,8 @@
+p {
+  color: blue;
+  border: 20px solid red;
+  padding: 10px;
+  background-color: aqua;
+  margin: auto 50px; /*centrar bloques*/
+  text-align: center; /*centrar texto*/
+}

@@ -1,0 +1,25 @@
+h1 {
+  color: blue;
+}
+ul {
+  list-style-type: none;
+  background-color: #457b9d;
+  overflow: hidden; /*para ue todo el ul quede independiente*/
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: left; /*asi cda elemento se acomoda ala izquierda y por lo mismo en una filita*/
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: aqua;
+}
