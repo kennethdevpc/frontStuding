@@ -1,0 +1,223 @@
+Paleta de colores:
+https://coolors.co/palettes/trending
+
+
+✅️HTML:
+	<a href="http://www.enlace.com" target="_blank">Ejemplo de enlace</a>
+Donde:
+
+▫️<a> ➡️ es la etiqueta o tag inicial y </a> la etiqueta de cierre.
+▫️href y target ➡️ son los atributos.
+▫️http://www.enlace.com y _blank ➡️ son las variables.
+▫️Ejemplo de enlace es el contenido.
+
+✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️✅️
+
+
+
+* text-decoration: none;	||||quita el subrayado
+
+* display: block		||||tmabien deja los bloquecitos separados pero cubre el with total mientras que  el inline quedan unos en fila ,el otro (block) quedan en una columna hacia abajo
+
+* display: inline-block;	||||/*para que no se queden uno sobre el otro y que cada uno tenga su propio espacio,toma el %total del contenido por ejemplo "hola" tomaria hasta hola, mientras que blclk tomaria "hola-----espacio hasta el final del bloque"*/
+
+
+
+
+
+▶️En tablas:-----------------------------------------
+* border-collapse: collapse	||||/*para que los bordes queden en uno solo en las tablas || se unan | */
+* border-spacing: 5px;	||||/*al revez de collapse crea espacios ||*/
+* <th colspan="2">4</th>	||||/*sirve para unir dos celdas en columna*/
+* <td rowspan="2">e2</td>	||||/*sirve para unir dos celdas fila por ejemplo su fila y la fila que esta bajo de el*/
+
+*||||/*para filas pares*/
+	s:
+		tr:nth-child(even) { ||||/*para filas pares*/
+	  	background-color: blue;
+		}
+	
+*||||/*para filas impares*/
+	s:
+		tr:nth-child(odd) {	||||/*para filas impares*/
+		  background-color: red; 
+		}
+
+▶️LISTAS:------------------------------------------
+* float: left; 		||||/*asi cda elemento se acomoda ala izquierda y por lo mismo en una filita*/
+* overflow: hidden; 		||||/*para ue todo el ul quede independiente*/
+
+
+* ("*") : 		||||el asterisco coloca  a todos los estilos
+
+* bookmark: se direcciona al punto donde este el id
+    s:
+    	<h2 id="java">java</h2>
+	<a href="#java">ir a java</a>
+
+* El iframe: permite visualizar algo de otras paginas en mi misma pagina tal como videos y cosas asi 
+	por ejemplo el siguiente ejemplo llama inicialmente al archivo "index,html" pero al dar el boto
+	me carga la pagina de kenneth : con el target y con el name
+	s:
+		<iframe src="index.html" name="marco1" class="marco"></iframe>
+		<a href="https://kennethdevpc.vercel.app/" target="marco1">cargar sitito</a>
+
+
+▶️Formulario:------------------------------------------
+* for: el form sirve para que sucndo le de click po ejemplo en el label se 
+	active el input con id= nombre
+	s:
+		<label for="nombre">Nombre:</label>
+		      <input type="text" id="nombre" />
+
+* step:sirve para mandar valores numericos con decimales
+ 
+ 	s:
+ 		<input type="number" id="edad" name="edad" placeholder="edad" required="true" step="any" />
+
+
+* radio botton: solo recibe un valor y los 
+* checkbox: varios vlalores
+* las listas select y option: pueden listar y puede seleccioner varias tambien
+* textarea: sirve para mandar textos
+
+
+*fieldset y legend:  sirve para envolver la informacio n con un marquito
+	      ------marquito:-----
+	      -   esto es el:    -
+	      -    contenido     -
+	      --------------------
+	s:
+		 <fieldset>
+		 <legend>Datos de fromulario:</legend>
+		 </fieldset>
+
+* ▶️atributos del elemento form:........
+  
+* target="_self" : desplieqgue n misma ventana por default
+* target="_blank" : despliga al dar submit el formulario se abre en otra venta el envio de dicho post
+     
+     	s:
+		<form action="mi_servidor" method="POST" target="_blank"  >
+     
+* autocomplete="off": permite que no se rellenen los campos por defecto por ejemplo se van mostrando datos que 
+                      ya he llenado antes y eso no quiere uno
+	s:
+		<form action="mi_servidor"  autocomplete="off">
+	
+................atributos del elemento form:........
+	
+	
+▶️TIPOS DE INPUT:----------------------------------------
+* reset de formulario:
+	s:
+        	<input type="reset" value="Resta
+
+* input solo lectura: solo se muestra no se puede modificar pero SI MANDA VALOR en el formulario dicho valor si se envia:
+        s:
+        	<input type="text" id="idPersona" name="idPersona" value="100" readonly="true" />
+        
+* input oculto: tmabien SI MANDA VALOR informacion pero no se muestra al usuario
+	s:
+        	<input type="hidden" id="sistema" name="sistema" value="SAP" />
+      
+*input desabilitado: para que SOLO se muestre pero NOO MANDA VALOR en el formulario(no se envia valor en el formulario)
+	s:	
+		<input type="text" id="idPersona" name="idPersona" value="100" readonly="true" disabled="true" />
+
+*input tipo numericos y requerido con "step" que acepta valores con decimales
+	s:
+		<input type="number" id="edad" name="edad" placeholder="edad" required="true" step="any" />
+		
+* "step" : acepta valores con decimales
+
+* input tipo submit sin validar: el formnovalidate hace que no se valide la informacion ya que por defecto 
+	se va validar si le pone required=true
+	s:
+		<input type="submit" formnovalidate="formnovalidate" value="Enviar sin validas" />
+		
+▶️Estilos:-----------------
+*) para tomar un input solo de tipo submit: se puede crear un estilo para una etiqueta con una atributo
+
+
+    .contenedor .elemento input[type='submit'] {
+      background-color: #f72585;
+      border: none;
+      letter-spacing: 3px;
+      cursor: pointer;
+
+    }
+
+
+* cursor: pointer:   me pone la manito
+
+* letter-spacing: 3px: me pone el espacio entre las letras
+
+* box-shadow://sombra, inset es para adentro por defecto sombra es afuera del bloque
+	s:
+		box-shadow: inset 🔺️5px 🔺️0   🔺️5px  🔺️-2px   🔺️#4895ef;  
+		
+		                  🔺️enx 🔺️enY 🔺️blur 🔺️spread 🔺️color
+		                            difuminar propagar
+
+* clear: both:  limpia lo que esta adelante y atras y queda en la siguiente linea como en el codigo
+	s:
+	
+	    //codigo atras-----------
+	    <footer>
+	      <h2>
+		 <a href="https://kennethdevpc.vercel.app/"> Kennethdevpc </a>
+	      </h2>
+	    </footer>
+	    //codigo adelante---------
+
+* text-align: center;	➖️ /*se encarga de alinear horizontalmente todos los elementos, incluso los bloques*/
+
+* object-fit:cover	➖️ permite que si la imagen se rompe se adapte al tamaño que se le da
+
+* box-sizing: border-box;	➖️ /* Incluye el padding, el margin y todo en el ancho total (width) */
+
+* display: inline-block;	➖️ /*Para que el bloque siguiente se pueda unir inmediatamente a la derecha*/
+
+* overflow: auto;➖️➖️/*Coloca un scroll en caso de que se desborde las etiquetas hijas cuando se baje el tamaño de l apantalla*/
+
+* max-width: 100%;➖️➖️/*se ajusta paraa no sobrepasar Maxima anchura del contenedor padre es decir "section_img" */
+
+* width: 100%;➖️➖️ hace que el elemento ocupe todo el ancho disponible del contenedor padre, incluso si el contenido dentro del elemento es más ancho o mas angosto.
+
+* width: 40%;➖️➖️ /* Ancho del aside , se ajusta a la anchura de 40% del contenedor padre*/
+
+* max-width:➖️➖️100%; hace que el elemento no sea más ancho que el contenedor, asegurando que el contenido dentro del elemento se ajuste y evitando el desbordamiento.
+
+* height: 100%;➖️➖️/*se ajusta a la altura del contenedor padre */
+
+*	a:link, 	es el link antes de cualqueir cosa
+	a:visited	es cuando se da el click y se abre el elemento
+	a:hover	es cuando se para encima
+	a:active	es cuando se sostiene el click sobre ese link
+
+
+▶️tamaño de imagen como fondo:
+	s:
+		.back {
+		  background-image: url('/assets/public/images/img/prueba.png');
+		  background-repeat: no-repeat; /* No repetir la imagen en caso de que no cubra completamente */
+		  background-position: center center; /* Posición centrada de la imagen */
+		  height: 50vh; /* Altura igual al 100% del viewport (ventana) */
+		  background-attachment: fixed;
+		  background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+		  /* background-size: contain; Ajustar la imagen para cubrir lo maximo posible del contenedor 
+		  sin amebargo quedaran partes blancas si las PROPORCIONES  de la imagen no son proporcionales
+		    alas del Contenedro osea si el contenedor mide 20x10 la imagen debe ser algo 
+		    como de 10x5 o 2x1 o 8x4 asi sucesivamente */
+		    }
+
+      background-size: 100vw 100vh; /*la mejor opcion que encontre para que no 
+      sepierda la imagen ya que toma dependiendo la pantalla el 100%*/
+		    
+	
+	
+simbolos codigos: caracteres especiale html
+https://ascii.cl/es/codigos-html.htm
+	
+	
