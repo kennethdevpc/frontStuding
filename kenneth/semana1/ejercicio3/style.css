@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('./images/pizarra.jpg');
+  background-repeat: no-repeat; /* No repetir la imagen en caso de que no cubra completamente */
+  background-position: center center; /* Posición centrada de la imagen */
+  background-attachment: fixed;
+  background-size: 100vw 100vh; /*la mejor opcion que encontre para que no sepierda la imagen ya que toma dependiendo la pantalla el 100%*/
+  /* background-size: cover;  Ajustar la imagen para cubrir todo el contenedor */
+  /* background-size: contain; Ajustar la imagen para cubrir lo maximo posible del contenedor sin amebargo quedaran partes blancas si las PROPORCIONES  de la imagen no son proporcionales  alas del Contenedro osea si el contenedor mide 20x10 la imagen debe ser algo como de 10x5 o 2x1 o 8x4 asi sucesivamente */
+}
+
+main {
+}
+h1 {
+  margin-top: 1%;
+
+  text-align: center;
+}
+
+.container {
+  margin-top: 2%;
+  margin-left: 10%;
+  padding: 5px;
+}
+section {
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  width: 30%;
+  height: 30vh;
+  padding: 0px;
+}
+
+section article {
+  width: 100%;
+  height: 100%;
+}
+section article img {
+  height: 100%;
+  object-fit: cover;
+}
