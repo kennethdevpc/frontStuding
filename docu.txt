@@ -33,7 +33,7 @@ Donde:
 
 *||||/*para filas pares*/
 	s:
-		tr:nth-child(even) { ||||/*para filas pares*/
+		tr:nth-child(even) { ||||/*para filas pares*/ pero se podria coloar tambien cualquier numero deseado para una posiciondeseada
 	  	background-color: blue;
 		}
 	
@@ -215,7 +215,36 @@ Donde:
       background-size: 100vw 100vh; /*la mejor opcion que encontre para que no 
       sepierda la imagen ya que toma dependiendo la pantalla el 100%*/
 		    
-	
+▶️Display flex:
+      display:flex: es la funcion principal
+      flex-direction:row  ➖️➖️ organiza en fila
+      flex-direction:column|  ➖️➖️ organiza en columna
+      flex-wrap : ➖️➖️pone como en una matriz los componentes
+       
+      flex-flow : row wrap; ➖️➖️ pone o engloga qeu este en fila y el wrap(para que no se amontonen) 
+        ----
+        ----
+      flex-flow: column wrap;
+        - 
+        -
+        -
+        -
+
+      justify-content: alinea en el eje x puede centrar (center, space-between)
+      align-items: alinea en el eje y puede centrar (center, stretch  , baseline, flex-start)
+      aling-content:stretch, flex-start, flex-end, center, space-between, space-around
+     *) align-items: alinea los elementos hijos de una misma fila entre sí mientras que
+     *) align-content lo hace respecto del padre. //solo funciona si esta el
+     *) align-self: alinea a solo un elemento individual
+     *) flex-row:#; lo que hace es que  aeterminado elemento lo hace crecer lo que uno le ponga
+                    Por ejemplo si tnego 3 elementos en una fila juntos,|a|b|c|-----spaciosobrante|
+                    el espacio sobrante es el pedazo de torta que se le puede repartir osea de los
+                    pixeles sobranes esos pixeles se le va a repartir los numeros que uno le ponga ojo solo 
+                    #positivos
+
+
+    
+
 	
 simbolos codigos: caracteres especiale html
 https://ascii.cl/es/codigos-html.htm

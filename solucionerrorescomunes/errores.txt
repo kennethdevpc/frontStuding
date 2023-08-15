@@ -1,1 +1,99 @@
-ss
+erro1- las imagenes se corren o se salen➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️
+
+para que las imagenes queden bien se debe hacer el widh y el height en todos los elementos padres al 100% o al porcentaje
+que se desee:
+	s:
+	 <section>
+          <article>
+            <p>Durazno</p>
+            <img src="images/durazno.png" alt="" />
+          </article>
+        </section>
+                 <section>
+          <article>
+            <p>Kiwi</p>
+            <img src="images/kiwi.png" alt="" />
+          </article>
+        </section>
+        <section>
+          <article>
+            <p>Naranja</p>
+            <img src="images/naranja.png" alt="" />
+          </article>
+        </section>
+
+
+para que queden bien alineaditos y no como se muestra en la imagen1 del eror1
+
+	el css erroneo es asi:
+	section {
+	  margin-left: 10px;
+	  margin-top: 10px;
+	  display: inline-block;
+	  width: 30%;
+	  height: 30vh;
+	  padding: 0px;
+	}
+
+	section article img {
+	  height: 100%;
+	  width: 60%;
+	  object-fit: cover;
+	}
+	
+	n: se puede notar que article no se le esta poniendo el widh y height
+	una solucion seria ponerle a la imagen en vez de heicht : 100% ponerle un 30vh o un "vh"
+	
+	s:
+		section article img {
+		  height: 30vh;
+		  width: 60%;
+		  object-fit: cover;
+		}
+	n: asi se evita que las imagenes corran el contenido ya que se les da a todas una altura fija :
+
+	n: otra solucion es, colocar coo decia , colocar a los elementos padres que se 
+	ocupe sempre el 100% en widht y height
+	
+	s:
+		section article {
+		  width: 100%;
+		  height: 100%;
+		}
+		section article img {
+		  height: 100%;
+		  object-fit: cover;
+		}
+		 
+			
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+erro1- las imagenes se corren o se salen➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️
+
+
+
+
+
+
+
+
+
+
+
+

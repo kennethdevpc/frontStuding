@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/fondo-flex.jpg');
+  background-repeat: no-repeat; /* No repetir la imagen en caso de que no cubra completamente */
+  background-position: center center; /* Posición centrada de la imagen */
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  width: 100%;
+  height: 100vh;
+  align-content: center;
+}
+h1 {
+  display: none;
+}
+header {
+  height: 30%;
+}
+main {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main img {
+  max-width: 130px;
+}
+div {
+  display: flex;
+  justify-content: center;
+}
+.img1 {
+  order: 2;
+  align-self: flex-start;
+  flex-grow: 1;
+}
+.img2 {
+  order: 1;
+  align-self: center;
+  flex-grow: 1;
+}
+
+.img3 {
+  order: 4;
+  align-self: flex-start;
+  flex-grow: 1;
+}
+
+.img4 {
+  order: 3;
+  align-self: flex-end;
+  flex-grow: 1;
+}
+.img5 {
+  order: 5;
+  align-self: center;
+  flex-grow: 1;
+}
