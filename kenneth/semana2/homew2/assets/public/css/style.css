@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 98%;
+  margin: 20px auto;
+  background: linear-gradient(#74b709, #c978ff);
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  background-color: #2b3742;
+  padding: 3px;
+  font-size: 20px;
+  position: relative;
+}
+nav {
+  position: relative;
+  width: 100%; /* Ajustarse a la anchura del header */
+  height: 9vh;
+}
+nav a {
+  color: aliceblue;
+  margin-left: 30px;
+}
+nav a.links {
+  position: relative;
+  padding: 3px;
+  top: 25%;
+}
+.img_nav {
+  box-shadow: inset 5px 0 5px 1px #316caf;
+  object-fit: cover;
+  height: 100%;
+  float: right;
+}
+h1,
+h2 {
+  text-align: center; /*centra textos horizontalmente*/
+}
+
+.section_img {
+  box-shadow: 10px -1px 10px rgba(103, 11, 126, 0.2);
+  background: rgba(214, 27, 27, 0.1);
+  border-radius: 20px 0 20px 0;
+  margin: 5px auto;
+  width: 80%;
+  height: 25vh;
+  padding: 5px;
+}
+
+.section_img > img {
+  border-radius: 20px 0 20px 0;
+  width: 100%;
+  height: 100%; /*Maxima altura del contenedor padre es decir "section_img" */
+  object-fit: cover; /*Evitando que se coloque la imagen muy apretada, solo tomara una parte nitida de la imagen, si se quita queda el total de la imagen pero apretada*/
+}
+div {
+  text-align: center;
+  padding: 10px;
+  margin: 15px auto;
+  width: 80%;
+  height: 30vh;
+  overflow: auto; /*Coloca un scrol en caso de que se desborde las etiquetas hijas cuando se baje el tamaño de l apantalla*/
+}
+div > section {
+  position: relative;
+  top: 40%;
+  padding: 2px;
+  width: 50%; /*Lo puse en 50 para poder colocar el side al lado derecho*/
+  display: inline-block; /*Para que el bloque siguiente se pueda unir inmediatamente a la derecha*/
+  box-sizing: border-box; /* Incluye el padding, el margin y todo en el ancho total (width) */
+}
+
+div > aside {
+  float: right;
+  width: 40%; /* Ancho del aside, se ajusta a la anchura del contenedor padre (div)*/
+  height: 100%; /*se ajusta a la altura del contenedor padre */
+  padding: 5px;
+}
+
+.content_right img {
+  width: 90%; /*hago que se ajuste la anchura a 90% del contenedor padre (aside)*/
+  height: 100%; /*la altura solo cubrira hasta el maximo del contenedor padre*/
+  padding: 0px;
+  object-fit: cover;
+}
+
+footer {
+  font-size: 18px;
+  margin: 0px auto;
+  padding: 10px;
+  background-color: #2b3742;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 13vh;
+  width: 100%;
+  clear: both;
+}
+
+footer h4 {
+  position: relative;
+  top: 50%;
+  display: inline;
+  margin: 0 10px; /* Añade margen para separar los divs */
+}
+
+/*ABOUT*/
+body.about {
+  width: 98%;
+  margin: 15px auto;
+  background: linear-gradient(#74b709, #c978ff);
+}
+
+div.about {
+  text-align: center;
+  padding: 5px;
+  margin: 1x auto;
+  width: 70%;
+  height: 20vh;
+  overflow: auto; /*Coloca un scrol en caso de que se desborde las etiquetas hijas cuando se baje el tamaño de l apantalla*/
+}
+div > aside.about {
+  float: left;
+  width: 35%; /* Ancho del aside, se ajusta a la anchura del contenedor padre (div)*/
+  height: 100%; /*se ajusta a la altura del contenedor padre */
+  padding: 1px;
+}
+
+div > aside.about img {
+  width: 70%; /*hago que se ajuste la anchura a 90% del contenedor padre (aside)*/
+  height: 100%; /*la altura solo cubrira hasta el maximo del contenedor padre*/
+  padding: 0px;
+  object-fit: cover;
+}
+
+footer.about {
+  font-size: 18px;
+  margin: 0px auto;
+  padding: 2px;
+  background-color: #2b3742;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 8vh;
+  width: 100%;
+  clear: both;
+}
+
+footer.about h4 {
+  position: relative;
+  top: 25%;
+  display: inline;
+  margin: 0 10px; /* Añade margen para separar los divs */
+}
+
+/*Contact*/
+.section_img_contact {
+  box-shadow: 10px -1px 10px rgba(103, 11, 126, 0.2);
+  background: rgba(214, 27, 27, 0.1);
+  border-radius: 20px 0 20px 0;
+  margin: 5px auto;
+  width: 50%;
+  height: 37vh;
+  padding: 5px;
+}
+
+.section_img_contact > img {
+  border-radius: 20px 0 20px 0;
+  width: 100%;
+  height: 100%; /*Maxima altura del contenedor padre es decir "section_img" */
+  object-fit: cover; /*Evitando que se coloque la imagen muy apretada, solo tomara una parte nitida de la imagen, si se quita queda el total de la imagen pero apretada*/
+}
+
+div.contact {
+  text-align: center;
+  padding: 5px;
+  margin: 1x auto;
+  width: 70%;
+  height: 6vh;
+  overflow: auto; /*Coloca un scrol en caso de que se desborde las etiquetas hijas cuando se baje el tamaño de l apantalla*/
+}
+div.contact > section {
+  position: relative;
+  top: 0%;
+  padding: 2px;
+  width: 50%; /*Lo puse en 50 para poder colocar el side al lado derecho*/
+  display: inline-block; /*Para que el bloque siguiente se pueda unir inmediatamente a la derecha*/
+  box-sizing: border-box; /* Incluye el padding, el margin y todo en el ancho total (width) */
+}
+footer.contact {
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 2px;
+  background-color: #2b3742;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 13vh;
+  width: 100%;
+  clear: both;
+}
+h4.contact {
+  display: inline;
+  margin: 50px;
+}
