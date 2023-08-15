@@ -1,0 +1,13 @@
+table,
+td {
+  border: solid 1px black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 50%;
+}
+
+.colgroupmedium {
+  background: red;
+}
