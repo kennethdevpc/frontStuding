@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
   width: 98%;
   margin: 20px auto;
+  height: 94vh;
   background: linear-gradient(#74b709, #c978ff);
 }
 
@@ -25,6 +25,14 @@ nav {
 
 nav a {
   color: aliceblue;
+  margin-left: 30px;
+}
+nav a:hover {
+  color: rgb(107, 65, 221);
+  background: black;
+  border-radius: 15px;
+  padding-top: 10px;
+
   margin-left: 30px;
 }
 .img_nav1 {
@@ -126,4 +134,37 @@ footer {
   width: 50%;
   justify-content: space-around;
   height: 7vh;
+}
+
+/*table*/
+table,
+td {
+  border: solid 1px black;
+  border-collapse: collapse;
+  font-size: 20px;
+}
+table {
+  margin: 10px;
+  height: 65vh;
+  width: 60%;
+}
+
+/*list*/
+section.benefits ul {
+  padding: 15px;
+  clear: both;
+  list-style-type: disc;
+  list-style: none;
+}
+section.benefits {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+ol {
+  padding: 6%;
+}
+ul > li > img {
+  height: 28vh;
 }
