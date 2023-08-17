@@ -4,9 +4,12 @@
 }
 body {
   width: 98%;
-  margin: 20px auto;
-  height: 94vh;
+  margin: 5px auto;
   background: linear-gradient(#74b709, #c978ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 header {
@@ -114,13 +117,13 @@ footer {
   align-items: center;
 }
 
-/*cntact*/
+/*contact*/
 .section_img_contact {
   box-shadow: 10px -1px 10px rgba(103, 11, 126, 0.2);
   background: rgba(214, 27, 27, 0.1);
   border-radius: 20px 0 20px 0;
   width: 50%;
-  height: 50vh;
+  height: 55vh;
   padding: 5px;
 }
 
@@ -133,9 +136,11 @@ footer {
 .contact_data {
   width: 50%;
   justify-content: space-around;
-  height: 7vh;
+  margin-bottom: 40px;
 }
-
+h4.contact > a {
+  text-decoration: none;
+}
 /*table*/
 table,
 td {
@@ -145,10 +150,12 @@ td {
 }
 table {
   margin: 10px;
-  height: 65vh;
+  height: 70vh;
   width: 60%;
 }
-
+table tr {
+  text-align: center;
+}
 /*list*/
 section.benefits ul {
   padding: 15px;
@@ -167,4 +174,50 @@ ol {
 }
 ul > li > img {
   height: 28vh;
+}
+
+/*raffle*/
+
+main.raffle {
+  width: 100%;
+}
+main.raffle section.left {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main.raffle > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main.raffle form fieldset > div {
+  display: flex;
+  flex-direction: column;
+}
+main.raffle form fieldset.payment > div {
+  display: flex;
+  flex-direction: row;
+}
+main.raffle form fieldset.payment > div > label {
+  margin: 10px;
+}
+main.raffle form fieldset.send_info {
+  display: flex;
+  flex-direction: row;
+}
+main.raffle form fieldset.send_info > div {
+  display: flex;
+  flex-direction: row;
+}
+
+textarea {
+  resize: none;
+}
+main.raffle form {
+}
+fieldset {
+  border-color: transparent;
 }
