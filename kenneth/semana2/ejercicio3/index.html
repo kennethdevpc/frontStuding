@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario mapas</title>
+  </head>
+  <body>
+    <main class="raffle">
+      <h1>social work</h1>
+      <div>
+        <section class="left">
+          <div class="forme">
+            <h4>Location:</h4>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125335.33448964673!2d-74.90042017399938!3d10.983800866755336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d44d12ae605%3A0x2633844581b917b2!2sBarranquilla%2C%20Atl%C3%A1ntico!5e0!3m2!1ses-419!2sco!4v1692331144549!5m2!1ses-419!2sco"
+              width="400"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+        <div>
+          <form action="./show_data.html" method="get">
+            <fieldset>
+              <legend>Fill this form</legend>
+              <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" />
+              </div>
+              <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" />
+              </div>
+            </fieldset>
+            <fieldset class="genere">
+              <legend>Genere</legend>
+
+              <label for="last_name">Select genere:</label>
+
+              <select name="genere" id="genere">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Focus</legend>
+
+              <label for="front">Front</label>
+              <input type="checkbox" name="developer_type" id="front" value="front" />
+
+              <label for="back">Back</label>
+              <input type="checkbox" name="developer_type" id="back" value="back" />
+
+              <label for="full_stack">DevOps</label>
+              <input type="checkbox" name="developer_type" id="full_stack" value="full_stack" />
+            </fieldset>
+
+            <fieldset class="send_info">
+              <div>
+                <input type="checkbox" name="conditions" id="conditions" />
+
+                <label for="conditions"> I accept terms and conditions...</label>
+              </div>
+              <input type="submit" value="Send" />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

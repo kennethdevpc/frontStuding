@@ -1,0 +1,42 @@
+form {
+  background: rgba(1, 2, 3, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+div.form {
+  display: flex;
+  justify-content: center;
+}
+section.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  form {
+    background-color: rgba(172, 172, 172, 0.836);
+    color: rgb(24, 136, 76);
+    border: solid 3px rgb(47, 144, 255);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  form {
+    background-color: rgba(56, 11, 11, 0.836);
+    color: rgb(223, 191, 9);
+    border: solid 5px rgb(47, 120, 255);
+  }
+}
+@media (min-width: 1025px) {
+  form {
+    background-color: rgba(226, 10, 10, 0.836);
+    color: rgb(0, 0, 0);
+    border: solid 8px rgb(255, 169, 9);
+  }
+}
