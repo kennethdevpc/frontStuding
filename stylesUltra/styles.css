@@ -1,0 +1,29 @@
+/**/
+/* body {
+  position: relative;
+  min-height: 100vh;
+  background: gray;
+  padding-bottom: 50px;
+}
+footer .navbar {
+  bottom: 0px;
+  position: sticky;
+}
+
+main {
+  position: relative;
+  background: rebeccapurple;
+  padding: 2px;
+}
+footer {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background: red;
+}
+h2 {
+  position: absolute;
+  background: green;
+  bottom: 0px;
+} */
