@@ -16,8 +16,7 @@ body {
 header {
   background-image: url('./img/pexels-photo-12988675.jpeg');
   background-position: center;
-  background-size: cover;
-  object-fit: cover;
+  background-size: 100wh 100vh;
   height: 30vh;
   display: flex;
   align-items: center;
@@ -35,9 +34,7 @@ select {
   border-radius: 10px;
   box-shadow: 2px 2px 2px 0px rgba(71, 71, 73, 0.363);
 }
-main {
-  margin-top: 30px;
-}
+
 section {
   padding: 10px;
   bottom: -5px;
@@ -127,4 +124,62 @@ fieldset {
 fieldset {
   border: 1px solid rgba(206, 16, 16, 0.1);
   box-shadow: 2px 2px 2px 0px rgba(71, 71, 73, 0.363);
+}
+main {
+}
+@media ((min-width: 0px) and (max-width: 1024px)) {
+  header {
+    background-image: url('./img/pexels-photo-12988675.jpeg');
+    background-position: center;
+    background-size: 100wh 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .headerP {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  select {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    position: absolute;
+    bottom: -20px;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px rgba(71, 71, 73, 0.363);
+  }
+  .section-carts {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  section {
+    padding: 3px;
+    margin: 3px;
+    width: auto;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  footer {
+    height: 20vh;
+    background: #a7d0d1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: auto;
+  }
 }
