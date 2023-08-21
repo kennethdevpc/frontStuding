@@ -171,7 +171,13 @@ section.benefits {
   align-items: center;
 }
 ol {
-  padding: 6%;
+  padding: 12%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ol > li {
+  width: 50%;
 }
 ul > li > img {
   height: 28vh;
@@ -226,7 +232,7 @@ main.benefits section ol div > li {
   margin: 40px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 0px) and (max-width: 1024px) {
   /*about*/
   main {
   }
@@ -236,6 +242,7 @@ main.benefits section ol div > li {
   }
   header {
     height: 100%;
+    background: red;
   }
   header > nav {
     justify-content: center;
@@ -277,5 +284,11 @@ main.benefits section ol div > li {
   }
   main.raffle > div > div {
     border: solid 1px rgba(103, 11, 126, 0.2);
+  }
+  ol {
+    padding: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
