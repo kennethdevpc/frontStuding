@@ -17,7 +17,8 @@ header {
   background-image: url('./img/pexels-photo-12988675.jpeg');
   background-position: center;
   background-size: cover;
-  height: 25vh;
+  object-fit: cover;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,11 +26,12 @@ header {
   position: relative;
 }
 select {
-  width: 350px;
-  height: 40px;
+  width: 30%;
+  height: 55px;
   padding: 10px;
   position: absolute;
   bottom: -20px;
+  border: transparent;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 0px rgba(71, 71, 73, 0.363);
 }
@@ -37,15 +39,12 @@ main {
   margin-top: 30px;
 }
 section {
-  width: 20%;
-
   padding: 10px;
   bottom: -5px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 0px rgba(71, 71, 73, 0.363);
 }
 p {
-  width: 45%;
   color: var(--colorLeter);
 }
 
@@ -65,27 +64,37 @@ h1 {
   height: 45vh;
   align-items: center;
 }
+section h1 {
+  font-size: 190%;
+  margin-bottom: 10px;
+}
+.headerP {
+  width: 45%;
+}
+section {
+  padding: 17px;
+  margin: 10px;
+  width: 17%;
+  height: 38vh;
+}
+section p {
+  padding-bottom: 10px;
+}
+
 .cart1 {
   background-image: url(./img/pexels-justyna-serafin-13164394.jpg);
   background-position: center;
   background-size: cover;
-  margin: 10px;
-  width: 15%;
-  height: ;
 }
 .cart2 {
   background-image: url(./img/pexels-amber-janssens-12418634.jpg);
   background-position: center;
   background-size: cover;
-  margin: 10px;
-  width: 15%;
 }
 .cart3 {
   background-image: url(./img/pexels-lucas-suárez-13170472.jpg);
   background-position: center;
   background-size: cover;
-  margin: 10px;
-  width: 15%;
 }
 ol {
   list-style-type: upper-roman;
@@ -113,4 +122,9 @@ a {
 }
 fieldset {
   padding: 10px;
+}
+
+fieldset {
+  border: 1px solid rgba(206, 16, 16, 0.1);
+  box-shadow: 2px 2px 2px 0px rgba(71, 71, 73, 0.363);
 }
