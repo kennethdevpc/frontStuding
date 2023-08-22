@@ -5,4 +5,115 @@
 }
 body {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-image: url('./assets/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-size: 100wh 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header div img {
+  width: 30px;
+}
+nav {
+  background: green;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  height: 100%;
+  margin-left: 5px;
+  background: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carts {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.carts section {
+  background: rgb(13, 165, 38);
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.carts img {
+  width: 180px;
+}
+.info {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.info img {
+  width: 20%;
+  margin-left: 10%;
+  margin-right: 5%;
+  border-radius: 15px;
+}
+.info section {
+  margin-left: 3%;
+}
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(0, 255, 234);
+  margin-top: auto;
+}
+
+@media ((min-width: 0px) and (max-width: 1024px)) {
+  .carts {
+    flex-direction: column;
+  }
+  .carts section {
+    margin-top: 15px;
+  }
+  .info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .info img {
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 5%;
+    border-radius: 15px;
+  }
+  footer {
+    flex-direction: column;
+    height: 25vh;
+  }
 }
