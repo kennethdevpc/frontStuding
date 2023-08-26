@@ -1,0 +1,13 @@
+.fondo-violeta{
+    background-color: blueviolet ;
+}
+.letra-violeta{
+    color: blueviolet ;
+}
+.alto-c{
+    height: 500px;
+}
+.img-carousel{
+    object-fit: cover !important;
+    object-position: 50% 50% !important;
+}

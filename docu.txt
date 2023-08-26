@@ -46,7 +46,11 @@ Donde:
 ▶️LISTAS:------------------------------------------
 * float: left; 		||||/*asi cda elemento se acomoda ala izquierda y por lo mismo en una filita*/
 * overflow: hidden; 		||||/*para ue todo el ul quede independiente*/
-
+* para hacer que los puntos queden por dentro del bloque:
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
 
 * ("*") : 		||||el asterisco coloca  a todos los estilos
 
@@ -174,7 +178,7 @@ Donde:
 * text-align: center;	➖️ /*se encarga de alinear horizontalmente todos los elementos, incluso los bloques*/
 
 * object-fit:cover	➖️ permite que si la imagen se rompe se adapte al tamaño que se le da
-
+* object-position:center
 * box-sizing: border-box;	➖️ /* Incluye el padding, el margin y todo en el ancho total (width) */
 
 * display: inline-block;	➖️ /*Para que el bloque siguiente se pueda unir inmediatamente a la derecha*/
