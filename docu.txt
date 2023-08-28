@@ -254,3 +254,39 @@ simbolos codigos: caracteres especiale html
 https://ascii.cl/es/codigos-html.htm
 	
 	
+
+
+___________________
+
+▶️DOM:
+* console.dir : imprime obtendrás una lista detallada de las propiedades y métodos del elemento "qtiqueta llamada ya sea con getelemntbyid o otra cosa" en la consola
+* console.log :  obtienes la representación completa del elemento (el html) ;
+
+* console.log(contenedor.innerHTML); : html pero como string
+* contenedor.innerText : imprime el texto dentro de la etiqueta  (holamundo")
+* contenedor.tagName : me deja entrar al nombre de esa etiqueta (DIV,H1)
+
+* document.getElementsByClassName('top'); : seleccion por nombre de la clase
+* document.getElementsByTagName('li'); : <Seleccion por nombre de etiqueta
+
+*SELECCION POR SELECCION CSS
+Sirve ademas para hacer varias selleciones en cadena asi como en css entonces
+por ejmplo si tengo un ul y dentro un li en css seria ul>li entonces puedo usar 
+queryselector para (ulnombredelaclase.linombrede la clase)
+
+
+QUERYSELECTOR: toma el primer elemento que cumpla con el queryselector
+* document.querySelector('.top.f-naranja'); :  que cumpla que class="top f-naranja"
+* document.querySelector('ul li#aceitunas'); : "" <ul>..<li id="aceitunas">
+* document.querySelector('ul li:not(.f-marron)') toma todos los que NO sean:  <ul>..<li class="... f-marron">
+
+QUERYSELECTORAll: toma todos en una colleccion tipo arreglo
+
+document.querySelectorAll('ul li:not(#aceitunas)'); selaecciona todos los ul li que no sean id=aceitunas
+
+* DANTO ESTILOS DESDE JS:
+
+const primerTop = document.querySelector('.top');
+primerTop.style     //Me da el nombre de todos los estilos que tengo
+primerTop.style.backgroundColor = 'blue';     //coloca background en azul
+primerTop.style.textTransform = 'uppercase';  //pone en mayuscula
