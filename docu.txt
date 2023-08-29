@@ -219,7 +219,10 @@ Donde:
 
       background-size: 100vw 100vh; /*la mejor opcion que encontre para que no 
       sepierda la imagen ya que toma dependiendo la pantalla el 100%*/
-		    
+      
+      FORMA2:
+      background: url('images/biblioteca.jpg') no-repeat center center/cover;
+		  
 ▶️Display flex:
       display:flex: es la funcion principal
       flex-direction:row  ➖️➖️ organiza en fila
@@ -379,6 +382,19 @@ inputRojo.addEventListener('change', (e) => { //ese evento llama a el target.val
   textoRojo.innerText = rojo;
   actualizarColor(rojo, verde, azul);
 });
+
+
+//______boton y activacion 
+let botonElem = document.getElementById('boton-cambiar-cita');
+forma1:------
+    botonElem.addEventListener('click', (e) => {
+      cambiarCita();
+    });
+forma2:------
+    botonElem.addEventListener('click', cambiarCita);
+
+    
+
 
 
 
