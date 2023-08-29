@@ -260,6 +260,7 @@ https://ascii.cl/es/codigos-html.htm
 ___________________
 
 ▶️DOM:
+*document.body.style.backgroundColor = colorAleatorio; //se pede llamar el body directamente
 * console.dir : imprime obtendrás una lista detallada de las propiedades y métodos del elemento "qtiqueta llamada ya sea con getelemntbyid o otra cosa" en la consola
 * console.log :  obtienes la representación completa del elemento (el html) ;
 contenedor = document.getElementById('titulo');
@@ -349,7 +350,7 @@ let elementosSiguienteHermano = listaDeToppings.nextElementSibling; //tome ale e
 *target (blanco)  // el elemento que va recibr ese boton, bloque,imagen,etc__________EVENTOS
 
 *trigger(desencadenante) //accion (ejm:click) desencadena el evento de click
-
+(click, change)
 *event Handler //funcion que se ejecuta cuando curre un evento
 *event listener ((conexion entre la asociacion entre el evento y la funcion))
 
@@ -365,12 +366,19 @@ let elementosSiguienteHermano = listaDeToppings.nextElementSibling; //tome ale e
   console.log(e.target.innerText);}
 
 
-//asignando esa funciona a todos los topics:
+//asignando esa funciona a todos los topics INPUT (button):
 const topics = document.getElementsByClassName('top');
 for (const topic of topics) {
   topic.addEventListener('click', mostrarClickEventListner);
 }
 
+//_____con el evento y el change par INPUT (range):
+const inputRojo = document.getElementById('rojo');
+inputRojo.addEventListener('change', (e) => { //ese evento llama a el target.value
+  let rojo = e.target.value;
+  textoRojo.innerText = rojo;
+  actualizarColor(rojo, verde, azul);
+});
 
 
 
