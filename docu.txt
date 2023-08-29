@@ -155,6 +155,7 @@ Donde:
 
 * cursor: pointer:   me pone la manito
 * user-select: none; //no deja seleccionar el texto del boton
+* text-decoration: line-through; //tacha el texto con una linea en el centro
 
 * letter-spacing: 3px: me pone el espacio entre las letras
 
@@ -339,6 +340,9 @@ const listaDeToppings = document.getElementById('lista-toppings');
 
 *elemetosPadre=listaDeToppings.parentElement.parentElement //llegaria al elemento padre o que contienen 2 capas arriba de ese elemento "listaDeToppings"
 *elemetosPadre.classList.add('peubacolor'); //se le puede entonces cambiar las clase o lo deseado en ese elemento padre
+*elemetosPadre.classList.toggle('completada'); //el toggle hace que si hay alguna clase la quite y sino la hay laponga eso sin necesidad de un condicional
+
+
 
 *let elementosHijo = listaDeToppings.children; //toma los elementos hijos en un arreglo []
 *//toma el primer elementolementosHijo[0]
@@ -379,6 +383,9 @@ for (const topic of topics) {
 const inputRojo = document.getElementById('rojo');
 inputRojo.addEventListener('change', (e) => { //ese evento llama a el target.value
   let rojo = e.target.value;
+  //ojo tambien podri aser que si quiero seleccionar el padre
+  //  e.target.parentNode.parentNode;
+
   textoRojo.innerText = rojo;
   actualizarColor(rojo, verde, azul);
 });
@@ -394,6 +401,17 @@ forma2:------
     botonElem.addEventListener('click', cambiarCita);
 
     
+*EVENTO CON TECLA ENTER:
+
+*keydown
+* input.addEventListener('keydown', (e) => {
+    if (e.key == 'Enter') {
+      agregarTarea();
+    }
+  });
+
+
+
 
 
 funciones de js:
