@@ -1,0 +1,38 @@
+Cambios:
+
+*class=/  className //de la class para styles
+*for =/   htmlFor   //el for del label
+*los stilos cambia a camelCase:
+  background-color =/ backgroundColor
+  const estiloDiv={
+    color:'red';
+    backgroundColor:'blue'
+  }
+  <div style={estiloDiv}>hola</div>
+
+  forma2: 
+  <div style={{color: 'red'}}>hola</div>
+
+
+* {} //significa que lo que esta dentro es js
+
+*ATRIBUTOS REACT:
+  https://es.legacy.reactjs.org/docs/dom-elements.html
+
+
+*self closing tag //etiqueta que no tiene cierre
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
