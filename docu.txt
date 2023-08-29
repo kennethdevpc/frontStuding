@@ -261,13 +261,13 @@ ___________________
 ▶️DOM:
 * console.dir : imprime obtendrás una lista detallada de las propiedades y métodos del elemento "qtiqueta llamada ya sea con getelemntbyid o otra cosa" en la consola
 * console.log :  obtienes la representación completa del elemento (el html) ;
-
+contenedor = document.getElementById('titulo');
 * console.log(contenedor.innerHTML); : html pero como string
 * contenedor.innerText : imprime el texto dentro de la etiqueta  (holamundo")
 * contenedor.tagName : me deja entrar al nombre de esa etiqueta (DIV,H1)
-
-* document.getElementsByClassName('top'); : seleccion por nombre de la clase
-* document.getElementsByTagName('li'); : <Seleccion por nombre de etiqueta
+* contenedor.textContent : me toma el texto pero tambien los "tabs o espacios en el html en la identacion"
+* document.getElementsByClassName('top'); : seleccion por nombre de la clase (arreglo de todos)
+* document.getElementsByTagName('li'); : <Seleccion por nombre de etiqueta (arreglo de todos)
 
 *SELECCION POR SELECCION CSS
 Sirve ademas para hacer varias selleciones en cadena asi como en css entonces
@@ -284,9 +284,100 @@ QUERYSELECTORAll: toma todos en una colleccion tipo arreglo
 
 document.querySelectorAll('ul li:not(#aceitunas)'); selaecciona todos los ul li que no sean id=aceitunas
 
+*ELIMINANDO ELEMNTO HTML:
+elementoAEliminar = document.querySelector('.top.f-naranja');
+*elementoAEliminar.remove();
+
 * DANTO ESTILOS DESDE JS:
 
 const primerTop = document.querySelector('.top');
 primerTop.style     //Me da el nombre de todos los estilos que tengo
 primerTop.style.backgroundColor = 'blue';     //coloca background en azul
 primerTop.style.textTransform = 'uppercase';  //pone en mayuscula
+
+
+*ACCEDIENDO AL TEXTO:
+* innerText, textContent, innerHTML, : Accede a texto , y el ultimo a todo el html en string
+  * MODIFICANDO TEXTO:
+* const titulo = document.getElementById('titulo'); // leo el texto 
+* titulo.innerText = 'cambiando titulo';  //cambio el texto
+
+* ATRIBUTOS
+ <a href="./images/pizza.jpg">pizza</a>
+ 
+const enlaces = document.querySelector('a');
+* enlaces.removeAttribute('href') //Remueve el atributo
+* enlaces.removeAttribute('href') //Remueve el atributo
+* enlaces.setAttribute('href', 'holamunro')  //cambia el atibuto
+
+*MODIFICANDO LAS CLASESPARA NUEVOS styles
+<li class="top f-marron" id="aceitunas">Aceitunas</li>
+
+const primerTop2 = document.querySelector('.top');
+
+*primerTop2.classList.add('texto-verde')  //Agrego la clase texto-verde
+*primerTop2.classList.contains('f-marron')  //aqui lo que hace ees ver is existe una clase con nombre 'f-marron' //retorna true o false
+* primerTop2.classList.remove('top'); //remueve una clase del atributo
+
+*AGREGANDO ELEMENTOS AL DOM
+
+//__________AGREGANDO ELEMENTOS EN EL DOM
+  const listaTops = document.getElementById('lista-toppings'); //referencia punto donde se posisionara el nuevo elemento html
+  const topNuevo = document.createElement('h1'); //elemento nuevo que se queire agregar
+  topNuevo.classList.add('top', 'f-marron'); //puedo agregar clases
+  topNuevo.innerText = 'queso extra'; //Agrego texto
+  listaTops.append(topNuevo); //Lo agrego dentro de ese elemento
+  listaTops.append('tambien se puede agregar elementos texto y no html');
+
+//_________RECORRIENDO EL DOM
+const listaDeToppings = document.getElementById('lista-toppings');
+
+*elemetosPadre=listaDeToppings.parentElement.parentElement //llegaria al elemento padre o que contienen 2 capas arriba de ese elemento "listaDeToppings"
+*elemetosPadre.classList.add('peubacolor'); //se le puede entonces cambiar las clase o lo deseado en ese elemento padre
+
+*let elementosHijo = listaDeToppings.children; //toma los elementos hijos en un arreglo []
+*//toma el primer elementolementosHijo[0]
+*let elementosHijoprimero = listaDeToppings.firstElementChild //toma el primer elemento hijos
+*let elementosHijoprimero = listaDeToppings.lastElementChild //toma el ultimo elemento hijo
+let elementosAnteriorHermano = listaDeToppings.previousElementSibling; //toma el elemento hermano anterior a el 
+let elementosSiguienteHermano = listaDeToppings.nextElementSibling; //tome ale elemento hemrano proximo a el
+
+
+//__________EVENTOS
+
+*target (blanco)  // el elemento que va recibr ese boton, bloque,imagen,etc__________EVENTOS
+
+*trigger(desencadenante) //accion (ejm:click) desencadena el evento de click
+
+*event Handler //funcion que se ejecuta cuando curre un evento
+*event listener ((conexion entre la asociacion entre el evento y la funcion))
+
+-----------
+* para poder hacer un evento por ejemplo de click
+  esta forma no es tan usual pero puede servir para proeyectos pequeos
+  <li onclick="mostrarClick()" class="top f-marron" id="albaca">Albaca</li>
+
+*addEventListener
+  const cebollaB = document.querySelector('.f-naranja'); //llamo el elemento
+  cebolla.addEventListener('click', mostrarClickEventListner); //creo una activacion y llamado de la función
+  function mostrarClickEventListner(e) { //funcion que recibe a su vez automaticamente el evento y su target (tiene todo los methodos de el elemento html)
+  console.log(e.target.innerText);}
+
+
+//asignando esa funciona a todos los topics:
+const topics = document.getElementsByClassName('top');
+for (const topic of topics) {
+  topic.addEventListener('click', mostrarClickEventListner);
+}
+
+
+
+
+
+
+
+
+
+
+
+
