@@ -396,6 +396,23 @@ forma2:------
     
 
 
+funciones de js:
+
+* intervaloDeTiempo =  window.setInterval(actualizarCronometro, 1000); // es una función en JavaScript que se utiliza para ejecutar una función o un fragmento de código a intervalos regulares de tiempo 
+                                                  //función cada segundo (intervalo de 1000 milisegundos):
+* window.clearInterval(intervaloDeTiempo); //para que ya no se llama esa funcion en el window osea para esa accion de ejecutar cada segundo
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
