@@ -154,6 +154,7 @@ Donde:
 
 
 * cursor: pointer:   me pone la manito
+* user-select: none; //no deja seleccionar el texto del boton
 
 * letter-spacing: 3px: me pone el espacio entre las letras
 
