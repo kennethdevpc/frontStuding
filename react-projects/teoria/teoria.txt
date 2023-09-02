@@ -23,6 +23,11 @@ Cambios:
 *self closing tag //etiqueta que no tiene cierre
 
  
+_________________
+* Clase basada en condicion: 
+aplicando condicionales en las clases:
+ en php:
+ class="{{ ($developmentImageExists || $participationImageExists) ? 'page' : '' }}"
 
 
 
