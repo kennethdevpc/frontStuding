@@ -177,7 +177,8 @@ Donde:
 	    </footer>
 	    //codigo adelante---------
 
-* text-align: center;	➖️ /*se encarga de alinear horizontalmente todos los elementos, incluso los bloques*/
+* text-align: center; ➖️ /*se encarga de alinear horizontalmente todos los elementos, incluso los bloques*/
+* text-align: justify; ➖️ /*Se encarga de alinear el texto de manera justificada
 
 * object-fit:cover	➖️ permite que si la imagen se rompe se adapte al tamaño que se le da
 * object-position:center
@@ -196,6 +197,10 @@ Donde:
 * max-width:➖️➖️100%; hace que el elemento no sea más ancho que el contenedor, asegurando que el contenido dentro del elemento se ajuste y evitando el desbordamiento.
 
 * height: 100%;➖️➖️/*se ajusta a la altura del contenedor padre */
+
+* font-size:2.5em // esto lo que hace es que el tamaño de la letra va disminuyendo o aumentando dependiento del tamaño del contenedor
+* font-size:1.5rem //el rem lo que hace es que el tamaño de la letra que actualmente se define en el elemento padre (por ejemplo el body si defino 20px), entonces el hijo tendra ese tamaño multiplicado por 1.3  
+* line-height: 5.1;   //para los h1,h2,.. sirve para que la altura el height quede mas alto
 
 *	a:link, 	es el link antes de cualqueir cosa
 	a:visited	es cuando se da el click y se abre el elemento

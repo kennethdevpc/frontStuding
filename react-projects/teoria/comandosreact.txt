@@ -1,3 +1,19 @@
 1) creando app
   c:
     npx create-react-app
+
+2) insertar una imagen:
+  s:
+      <img className="imagen-testimonio" src={require('../images/image1.jpg')} alt="" />
+3) exportacionpor defecto y nombrada:
+  s:
+    function Testimonio() {}
+    export default Testimonio;
+  n: llamado en otro lado:
+    import Testimonio  from './componentes/Testimonio';
+  
+  //-------nombrada:
+  s:
+    export function Testimonio() {}
+  n: llamado en otro lado:
+    import {Testimonio}  from './componentes/Testimonio';
