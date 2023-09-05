@@ -32,6 +32,8 @@ Donde:
 * <td rowspan="2">e2</td>	||||/*sirve para unir dos celdas fila por ejemplo su fila y la fila que esta bajo de el*/
 
 *||||/*para filas pares*/
+.tarea-contenedor:nth-child(3n + 1): lo que hace es que toma el enesimo hijo con esa clase ".tarea-contenedor"
+
 	s:
 		tr:nth-child(even) { ||||/*para filas pares*/ pero se podria coloar tambien cualquier numero deseado para una posiciondeseada
 	  	background-color: blue;
@@ -187,7 +189,7 @@ Donde:
 * display: inline-block;	➖️ /*Para que el bloque siguiente se pueda unir inmediatamente a la derecha*/
 
 * overflow: auto;➖️➖️/*Coloca un scroll en caso de que se desborde las etiquetas hijas cuando se baje el tamaño de l apantalla*/
-
+*  overflow-wrap: anywhere;    /lo que hace es que si el muy largo va a seguir ahacia aabajo especialmente en textos
 * max-width: 100%;➖️➖️/*se ajusta paraa no sobrepasar Maxima anchura del contenedor padre es decir "section_img" */
 
 * width: 100%;➖️➖️ hace que el elemento ocupe todo el ancho disponible del contenedor padre, incluso si el contenido dentro del elemento es más ancho o mas angosto.
@@ -243,7 +245,7 @@ Donde:
         -
         -
         -
-
+      flex: 1 1; hace qeu el ancho se disctribulla en todos los componentes con la misma proporcion osea no deja que uno se amas ancho que el otro, ademas cubre todo el ancho del contenedor padre
       justify-content: alinea en el eje x puede centrar (center, space-between)
       align-items: alinea en el eje y puede centrar (center, stretch  , baseline, flex-start)
       aling-content:stretch, flex-start, flex-end, center, space-between, space-around
