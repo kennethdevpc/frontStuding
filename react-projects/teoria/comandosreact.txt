@@ -5,7 +5,7 @@
 2) insertar una imagen:
   s:
       <img className="imagen-testimonio" src={require('../images/image1.jpg')} alt="" />
-3) exportacionpor defecto y nombrada:
+3) exportacion por defecto y nombrada:
   s:
     function Testimonio() {}
     export default Testimonio;
@@ -17,3 +17,69 @@
     export function Testimonio() {}
   n: llamado en otro lado:
     import {Testimonio}  from './componentes/Testimonio';
+
+
+4) si quiero usar las propiedades .children que sirve para ilustrar o usar lo 
+que esta en el envio del uso del componnete:
+
+  App.js
+    import Boton from './componentes/Boton';
+    function App() {
+      return (
+        <div className="App">
+          <Boton>1www</Boton>   // ENTONCES SE ILUSTRA EL MENSAJE DEL CHILDREB "1WW"
+      )
+    }
+
+  Boton.js
+    import React from 'react';
+      function Boton(props) {
+        return <div>{props.children}</div>;
+      }
+    export default Boton;
+ 
+ 5) condicional en clases de html:
+  s:
+    className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}   //en react
+ 
+ 6) Uso de funciones en el addEventListener:
+  s:
+  App.js:
+  s:
+      const agregarInput = (val) => {
+        setInput(input + val);
+      };
+    -
+    -
+    return(
+       <Boton manejarClick={agregarInput}>/</Boton>
+    )
+    
+  Boton.js:
+    <div
+      className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}
+      onClick={() => props.manejarClick(props.children)}  //para poder hacer uso de la funcion entregada en props debo ejecutarla con una funcion arrow
+    >
+      {props.children}
+    </div>
+
+
+  Forma2 cuando soln funciones sencillas:
+
+  App.js
+    N: se define la funcion arrow dentro dea propiedad
+    s:
+       <BotonClear manejarClear={() => setInput('')}>Clear</BotonClear>
+    N: en este caso no es necesario ejecutar una funcion arrow en el componente "BotonClear"
+
+  BotonClear.js
+	N: como vemos aqui no hay que ejecutar "()=>{} " ya que ya se hizo desde el elemeento padre que llama al componente
+    s:
+      <div className='boton-clear' onClick={props.manejarClear}>⬅️
+        {props.children}
+      </div>
+//____________funciones:
+
+* isNaN(valor)  //Sirve par ver si es un número.
+* .trimEnd()  //remueve espacios vacios del final , trim remueve espacios del principio o del final
+* trim() //quita espacios adelante y atras
