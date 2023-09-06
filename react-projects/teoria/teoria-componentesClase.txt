@@ -1,0 +1,48 @@
+1) el componente de clase
+
+*) constructor: metodo usado par ainicializar el estado de un componente de react
+*) super() //ereda metodos del componente padre : (React.Component) osea todo lo que puede usar un componente de react
+*) las props: se le pasan como paramtero al "constructor " y al "super"
+  s:
+  class Tarea extends React.Component{
+     constructor(props){
+      super(props)
+     }
+
+
+     render(){
+      return(<h1>hoalmundo</h1>)
+     }
+
+  }
+
+* los estados:
+   s:
+    class Tarea extends React.Component{
+      constructor(){
+        super()
+
+        this.state={completada:true,color:azul,prioridad:1}
+      }
+
+
+      render(){
+        return(<h1>hoalmundo</h1>)
+      }
+
+    }
+
+  *usando los estados:
+    s:
+      this.state.completada
+      this.state.color
+    
+    render(){
+        return(<h1>accediendo al estado▶️{this.state.completada}</h1>)
+      }
+
+  *modificando estado:
+
+    s:
+
+     this.setState={completada:false,color:verde}
