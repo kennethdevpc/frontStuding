@@ -78,6 +78,50 @@ que esta en el envio del uso del componnete:
       <div className='boton-clear' onClick={props.manejarClear}>⬅️
         {props.children}
       </div>
+  
+  7) pasandole un grpo de propiedades a un componente:
+
+      s:
+        export function App() {
+          const propsEnGrupos = { userName: 'username x', name: 'name x' };
+          return (
+            <section className="App">
+              <TwitterFollowCard {...propsEnGrupos}>yo soy el children</TwitterFollowCard>
+            </section>
+          );
+        }
+      s: //el componente:
+        export function TwitterFollowCard({ children, username, name }) {
+          return (
+            {children}
+            {username}
+            {name}
+          )
+        }
+
+
+
+
+
+
+Notas importantisismas:
+  1) si yo paso una prop a un componente, e inicializo un ESTADO dentro de ese componente HIJO
+  entonces ese componete tendra solamente esa propiedad tal como se paso, 
+  es decir si esa prop CAMBIA dentro del elemento padre EN ALGUN OTRO MOMENTO!,
+  entonces esa prop nunca va a llegar a cambiar el ESTADO del componete HIJO
+
+
+
+
+
+
+
+
+
+
+
+
+
 //____________funciones:
 
 * isNaN(valor)  //Sirve par ver si es un número.

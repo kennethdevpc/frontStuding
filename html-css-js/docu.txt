@@ -209,6 +209,35 @@ Donde:
 	a:hover	es cuando se para encima
 	a:active	es cuando se sostiene el click sobre ese link
 
+*funcionalidad hover para mostrar cuando tiene el hover:
+
+  s: html:
+  const handleClick = () => {
+    setIsFollowing(!isFollowing);
+  };
+   const buttonClassName = isFollowing
+    ? 'tw-followCard-button is-following'
+    : 'tw-followCard-button';
+
+
+        <button className={buttonClassName} onClick={handleClick}>
+          <span className="tw-followCard-text">{text}XX</span>
+          <span className="tw-followCard-stopFollow">Dejar de seguir</span>
+        </button>
+  s: css:
+  n: cuando esta en el hover osea posicionado y el elemento que tenga la clase 
+  " .tw-followCard-stopFollow" entonces cambia a mostrar ese bloque que para
+  este caso seria el "Dejar de seguir", y por el contrario cuando 
+  No esta en el hover no lo muestra esto se uso en el proyecto de minudev el el 00
+
+    .tw-followCard-button.is-following:hover .tw-followCard-stopFollow {
+        display: block;
+      }
+
+      .tw-followCard-stopFollow {
+        display: none;
+      }
+
 
 ▶️tamaño de imagen como fondo:
 	s:
@@ -295,7 +324,7 @@ QUERYSELECTOR: toma el primer elemento que cumpla con el queryselector
 
 QUERYSELECTORAll: toma todos en una colleccion tipo arreglo
 
-document.querySelectorAll('ul li:not(#aceitunas)'); selaecciona todos los ul li que no sean id=aceitunas
+document.querySelectorAll('ul li:not(#aceitunas)'); selecciona todos los ul li que no sean id=aceitunas
 
 *ELIMINANDO ELEMNTO HTML:
 elementoAEliminar = document.querySelector('.top.f-naranja');
